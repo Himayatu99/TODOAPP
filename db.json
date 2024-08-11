@@ -14,6 +14,31 @@
       "name": "Our",
       "id": 1925,
       "isComplete": false
+    },
+    {
+      "name": "Study Cypress",
+      "id": 9620,
+      "isComplete": false
+    },
+    {
+      "name": "Appium",
+      "id": 9761,
+      "isComplete": false
+    },
+    {
+      "name": "Go to the market",
+      "id": 4169,
+      "isComplete": false
+    },
+    {
+      "name": "Home",
+      "id": 857,
+      "isComplete": false
+    },
+    {
+      "name": "Playwright",
+      "id": 2593,
+      "isComplete": false
     }
   ],
   "users": [
