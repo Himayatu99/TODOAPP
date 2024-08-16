@@ -13,4 +13,10 @@ describe('Request command suite', () => {
         expect(response.body[0].name).to.be.eq('Home')
       })
   })
+  it('Post request', () => {
+    cy.request('POST', 'http://localhost:8080/todos', {
+      "name": "hello",
+      "isComplete": false
+    })
+  })
 })
