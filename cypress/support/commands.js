@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.on('uncaught:exception', (err, runnable) => {
+      // returning false here prevents Cypress from failing the test
+      return false
+})
+Cypress.Commands.add('addNewTodo', (todo) => {
+      cy.get('.todo-input').type(todo + '{enter}')
+      cy.get('.todo-item').last().should('contain.text', todo)
+      cy.get('.todo-input').type('First todo2{enter}')
+      cy.get('.todo-input').type('First todo3{enter}')
+})

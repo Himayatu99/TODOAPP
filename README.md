@@ -125,7 +125,7 @@ And this will delete the todo
 And here we can signup and login users
 
 -   Signup a new user:
-    `POST http://localhost:3000/signup`
+    `POST http://localhost:8080/signup`
 
 and the body is
 
